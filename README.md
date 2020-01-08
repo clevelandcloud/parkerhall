@@ -6,4 +6,14 @@ Static Website for Parker Hall
 
 ### Docker
 
+Future set up for docker site. Not there yet - Won't impact you @Chloe
+
 ### Local
+
+## Tailwind CSS
+
+[Documentation](https://tailwindcss.com/docs/customizing-colors)
+
+Initializing the tailwind configuration
+
+`npx tailwind init`

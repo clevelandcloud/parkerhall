@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/clevelandcloud/parkerhall#readme",
   "devDependencies": {
+    "autoprefixer": "^9.7.3",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
     "tailwindcss": "^1.1.4"
   },
   "dependencies": {}
