@@ -4,7 +4,7 @@
   "description": "Static Website for Parker Hall",
   "private": true,
   "scripts": {
-    "build": "webpack",
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,11 +19,8 @@
   },
   "homepage": "https://github.com/clevelandcloud/parkerhall#readme",
   "devDependencies": {
-    "tailwindcss": "^1.1.4",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "tailwindcss": "^1.1.4"
   },
   "dependencies": {
-    "lodash": "^4.17.15"
   }
 }
