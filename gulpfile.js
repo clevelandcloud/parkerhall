@@ -1,6 +1,7 @@
 // Set up gulp dependency
 
 var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 
 // Move HTML
 gulp.task('html', function () {
@@ -21,7 +22,17 @@ gulp.task('css', function() {
         ]))
         // ..
         .pipe(gulp.dest('./dist/css'));
-
 });
 
-gulp.task('default', gulp.series('html', 'css'));
+gulp.task('browser-sync', gulp.series('html', 'css'), function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist",
+            index: "index.html",
+        }
+    });
+    gulp.watch("src/css/*.css", gulp.series('css'));
+    gulp.watch("src/*.html/").on('change', browserSync.reload);
+});
+
+gulp.task('default', gulp.series('browser-sync'));
